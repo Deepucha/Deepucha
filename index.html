@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ei Meitei Ni</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial,sans-serif;
+    }
+
+    body{
+      background:#000;
+      color:white;
+      line-height:1.6;
+    }
+
+    header{
+      height:100vh;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      padding:20px;
+      background:linear-gradient(to bottom,#220000,#000);
+    }
+
+    header h1{
+      font-size:60px;
+      margin-bottom:20px;
+      color:#ff2e2e;
+    }
+
+    header p{
+      max-width:700px;
+      color:#ccc;
+      font-size:20px;
+    }
+
+    .logo{
+      width:120px;
+      height:120px;
+      border-radius:50%;
+      background:#444;
+      margin-bottom:30px;
+    }
+
+    section{
+      padding:80px 20px;
+      max-width:1200px;
+      margin:auto;
+    }
+
+    h2{
+      font-size:40px;
+      margin-bottom:40px;
+      text-align:center;
+      color:#ff4040;
+    }
+
+    .stats{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+    }
+
+    .card{
+      background:#111;
+      border:1px solid #333;
+      padding:30px;
+      border-radius:20px;
+      text-align:center;
+    }
+
+    .card h3{
+      font-size:22px;
+      margin-bottom:15px;
+    }
+
+    .card p{
+      font-size:40px;
+      font-weight:bold;
+      color:#ff2e2e;
+    }
+
+    .timeline{
+      display:flex;
+      flex-direction:column;
+      gap:20px;
+    }
+
+    .timeline-item{
+      background:#111;
+      padding:25px;
+      border-left:4px solid red;
+      border-radius:10px;
+    }
+
+    .gallery{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+    }
+
+    .gallery div{
+      height:200px;
+      background:#222;
+      border-radius:20px;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      color:#666;
+    }
+
+    footer{
+      text-align:center;
+      padding:40px;
+      border-top:1px solid #222;
+      color:#888;
+    }
+
+    .btn{
+      display:inline-block;
+      margin-top:30px;
+      padding:15px 30px;
+      background:red;
+      color:white;
+      text-decoration:none;
+      border-radius:10px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo"></div>
+
+  <h1>Ei Meitei Ni</h1>
+
+  <p>
+    A humanitarian awareness platform documenting the impact of the Manipur conflict, preserving stories, statistics, and community resilience.
+  </p>
+
+  <a href="#stats" class="btn">Explore</a>
+</header>
+
+<section id="stats">
+  <h2>Conflict Statistics</h2>
+
+  <div class="stats">
+    <div class="card">
+      <h3>Total Deaths</h3>
+      <p>260+</p>
+    </div>
+
+    <div class="card">
+      <h3>Missing Persons</h3>
+      <p>100+</p>
+    </div>
+
+    <div class="card">
+      <h3>IDP's</h3>
+      <p>70,000+</p>
+    </div>
+
+    <div class="card">
+      <h3>Houses Burnt</h3>
+      <p>10,000+</p>
+    </div>
+
+    <div class="card">
+      <h3>Relief Camps</h3>
+      <p>350+</p>
+    </div>
+
+    <div class="card">
+      <h3>Children Affected</h3>
+      <p>Thousands</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Timeline</h2>
+
+  <div class="timeline">
+    <div class="timeline-item">
+      <h3>May 2023</h3>
+      <p>Violence escalated across Manipur causing humanitarian crisis and displacement.</p>
+    </div>
+
+    <div class="timeline-item">
+      <h3>2024</h3>
+      <p>Relief camps expanded while many families remained displaced.</p>
+    </div>
+
+    <div class="timeline-item">
+      <h3>2025-2026</h3>
+      <p>Communities continue rebuilding and documenting humanitarian losses.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Memorial Gallery</h2>
+
+  <div class="gallery">
+    <div>Photo</div>
+    <div>Photo</div>
+    <div>Photo</div>
+    <div>Photo</div>
+  </div>
+</section>
+
+<section>
+  <h2>Community Features</h2>
+
+  <div class="stats">
+    <div class="card">
+      <h3>Volunteer System</h3>
+    </div>
+
+    <div class="card">
+      <h3>Donation Support</h3>
+    </div>
+
+    <div class="card">
+      <h3>Missing Persons Database</h3>
+    </div>
+
+    <div class="card">
+      <h3>Live Updates</h3>
+    </div>
+
+    <div class="card">
+      <h3>Interactive Map</h3>
+    </div>
+
+    <div class="card">
+      <h3>Admin Dashboard</h3>
+    </div>
+  </div>
+</section>
+
+<footer>
+  Ei Meitei Ni • Humanitarian Awareness Platform • 2026
+</footer>
+
+</body>
+</html>
