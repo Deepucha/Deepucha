@@ -5,6 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ei Meitei Ni</title>
 
+  .news-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+margin-top:30px;
+}
+
+.news-card{
+background:#111;
+padding:25px;
+border-radius:20px;
+border:1px solid #333;
+text-align:center;
+}
+
+.news-card h3{
+margin-bottom:15px;
+color:#ff4040;
+}
+
+.news-card a{
+display:inline-block;
+padding:10px 20px;
+background:red;
+color:white;
+text-decoration:none;
+border-radius:10px;
+}
   <style>
     *{
       margin:0;
@@ -200,6 +228,47 @@ Loading...
   </div>
 </section>
 
+  <section id="news">
+
+<h2>Manipur Live News</h2>
+
+<div class="news-container">
+
+<div class="news-card">
+<h3>E-Pao News</h3>
+
+<a href="https://e-pao.org/" target="_blank">
+Visit E-Pao
+</a>
+</div>
+
+<div class="news-card">
+<h3>The Sangai Express</h3>
+
+<a href="https://www.thesangaiexpress.com/" target="_blank">
+Visit Sangai Express
+</a>
+</div>
+
+<div class="news-card">
+<h3>Hueiyen Lanpao</h3>
+
+<a href="https://hueiyenlanpao.com/" target="_blank">
+Visit Hueiyen Lanpao
+</a>
+</div>
+
+<div class="news-card">
+<h3>Imphal Times</h3>
+
+<a href="https://www.imphaltimes.com/" target="_blank">
+Visit Imphal Times
+</a>
+</div>
+
+</div>
+
+  </section>
 <section>
   <h2>Timeline</h2>
 
