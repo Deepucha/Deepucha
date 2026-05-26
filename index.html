@@ -30,6 +30,34 @@ margin-top:10px;
 .weather-widget span{
 color:#fff;
 }
+    .map-container{
+margin-top:30px;
+text-align:center;
+}
+
+.map-container button{
+background:#111;
+color:white;
+border:1px solid #333;
+padding:12px 20px;
+margin:10px;
+border-radius:15px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.map-container button:hover{
+background:#ff4040;
+}
+
+#map-info{
+margin-top:25px;
+padding:20px;
+border-radius:20px;
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(5px);
+color:white;
+}
     body{
       background:#000;
       color:white;
@@ -363,6 +391,37 @@ alt="Memorial Photo">
 
     <div class="card">
       <h3>Interactive Map</h3>
+      <section id="memory-map">
+
+<h2>Interactive Memory Map</h2>
+
+<div class="map-container">
+
+<button onclick="showPlace('kangla')">
+🏛 Kangla Fort
+</button>
+
+<button onclick="showPlace('relief')">
+🏠 Relief Camps
+</button>
+
+<button onclick="showPlace('memorial')">
+🕯 Memorials
+</button>
+
+<button onclick="showPlace('burnt')">
+🔥 Burnt Villages
+</button>
+
+<div id="map-info">
+
+Click a location to explore.
+
+</div>
+
+</div>
+
+</section>
     </div>
 
     <div class="card">
@@ -411,6 +470,44 @@ function showAdmin() {
 }
 
      </script>
+  <script>
+
+function showPlace(place){
+
+const info =
+document.getElementById("map-info");
+
+if(place === "kangla"){
+
+info.innerHTML =
+"<h3>Kangla Fort</h3><p>A historic and cultural symbol of the Meitei civilization.</p>";
+
+}
+
+if(place === "relief"){
+
+info.innerHTML =
+"<h3>Relief Camps</h3><p>Thousands of displaced families continue to stay in temporary shelters.</p>";
+
+}
+
+if(place === "memorial"){
+
+info.innerHTML =
+"<h3>Memorials</h3><p>Dedicated to remembering lives lost, missing persons, and survivors.</p>";
+
+}
+
+if(place === "burnt"){
+
+info.innerHTML =
+"<h3>Burnt Villages</h3><p>Several homes and localities were destroyed during the conflict.</p>";
+
+}
+
+}
+
+  </script>
 </body>
   <script>
 
