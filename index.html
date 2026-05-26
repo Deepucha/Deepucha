@@ -275,15 +275,23 @@ alt="Memorial Photo">
 
     <div class="card">
       <h2>Admin Dashboard</h2>
+<div class="card" onclick="showAdmin()"
+style="cursor:pointer;">
 
-<p style="
+<h3>Admin Dashboard</h3>
+
+<p id="admin-name"
+style="
+display:none;
+margin-top:15px;
 color:#ff4040;
-font-size:20px;
-margin-top:10px;
+font-size:18px;
 font-weight:bold;
 ">
-Managed by Deepu Chabungbam
+Administrator: Deepu Chabungbam
 </p>
+
+</div>
     </div>
   </div>
 </section>
@@ -291,7 +299,26 @@ Managed by Deepu Chabungbam
 <footer>
   Ei Meitei Ni • Humanitarian Awareness Platform • 2026
 </footer>
+<script>
 
+function showAdmin() {
+
+  const admin =
+  document.getElementById("admin-name");
+
+  if(admin.style.display === "none") {
+
+    admin.style.display = "block";
+
+  } else {
+
+    admin.style.display = "none";
+
+  }
+
+}
+
+     </script>
 </body>
   <script>
 
