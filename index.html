@@ -5,7 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ei Meitei Ni</title>
 
-  .news-container{
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial,sans-serif;
+    }
+
+    body{
+      background:#000;
+      color:white;
+      line-height:1.6;
+    }
+.news-container{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:20px;
@@ -33,20 +46,6 @@ color:white;
 text-decoration:none;
 border-radius:10px;
 }
-  <style>
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-      font-family:Arial,sans-serif;
-    }
-
-    body{
-      background:#000;
-      color:white;
-      line-height:1.6;
-    }
-
     header{
       height:100vh;
       display:flex;
