@@ -139,6 +139,20 @@
 <body>
 
 <header>
+  <div id="manipuri-calendar"
+style="
+margin-top:20px;
+padding:15px;
+background:#111;
+border:1px solid #333;
+border-radius:15px;
+color:#ff4040;
+font-size:18px;
+display:inline-block;
+">
+Loading...
+  </div>
+  
   <img src="logo.png" alt="Ei Meitei Ni Logo" width="220">
 
   <h1>Ei Meitei Ni</h1>
@@ -262,4 +276,24 @@
 </footer>
 
 </body>
+  <script>
+
+function updateManipuriDate() {
+
+  const now = new Date();
+
+  const date = now.toLocaleDateString();
+
+  const time = now.toLocaleTimeString();
+
+  document.getElementById("manipuri-calendar").innerHTML =
+  "ꯃꯩꯇꯩ ꯊꯥ | Meitei Calendar<br>" +
+  date + "<br>" + time;
+}
+
+setInterval(updateManipuriDate,1000);
+
+updateManipuriDate();
+
+  </script>
 </html>
